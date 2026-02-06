@@ -1,21 +1,25 @@
 {
   "name": "tiktok-live-socket",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Centralized TikTok LIVE to Socket.IO event hub",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KingAndrewYT/tiktok-live-socket.git"
-  },
-  "keywords": [],
+  "keywords": [
+    "tiktok-live",
+    "socket.io",
+    "event-hub",
+    "realtime"
+  ],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/KingAndrewYT/tiktok-live-socket/issues"
-  },
-  "homepage": "https://github.com/KingAndrewYT/tiktok-live-socket#readme"
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "socket.io": "^4.8.1",
+    "tiktok-live-connector": "^1.2.2"
+  }
 }
